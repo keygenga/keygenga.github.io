@@ -1,3 +1,10 @@
+/*
+ *	Author: Etor MADIV
+ *	Group:  Keygen GQ
+ *	Copyright (C) 2016 Keygen GQ. All rights reserved.
+ *	Join us: etormadiv [(At)] gmail [(DoT)] com
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
