@@ -1,0 +1,23 @@
+/*
+CPU Disasm
+Address   Hex dump          Command                                  Comments
+0167AD09  /$  8B01          MOV EAX,DWORD PTR DS:[ECX]               ; sublime_text.0167AD09(guessed void)
+0167AD0B  |.  56            PUSH ESI
+0167AD0C  |.  85C0          TEST EAX,EAX
+0167AD0E  |.- 75 04         JNZ SHORT 0167AD14
+0167AD10  |.  33F6          XOR ESI,ESI
+0167AD12  |.- EB 02         JMP SHORT 0167AD16
+0167AD14  |>  8B30          MOV ESI,DWORD PTR DS:[EAX]
+0167AD16  |>  8B51 08       MOV EDX,DWORD PTR DS:[ECX+8]
+0167AD19  |.  8B46 08       MOV EAX,DWORD PTR DS:[ESI+8]
+0167AD1C  |.  8BCA          MOV ECX,EDX
+0167AD1E  |.  D1E9          SHR ECX,1
+0167AD20  |.  48            DEC EAX
+0167AD21  |.  23C8          AND ECX,EAX
+0167AD23  |.  8B46 04       MOV EAX,DWORD PTR DS:[ESI+4]
+0167AD26  |.  83E2 01       AND EDX,00000001
+0167AD29  |.  8B0488        MOV EAX,DWORD PTR DS:[ECX*4+EAX]
+0167AD2C  |.  5E            POP ESI
+0167AD2D  |.  8D04D0        LEA EAX,[EDX*8+EAX]
+0167AD30  \.  C3            RETN
+*/
